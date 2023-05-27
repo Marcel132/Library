@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteka</title>
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navigation">
+    <h1 class="logo"><a href="index.html">Biblioteka</a></h1>
+    <div id="log-box">
+      <div id="log-in-btn"><button>Zaloguj się</button></div>
+      <div id="sign-up-btn"><button>Zarejestruj się</button></div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <button type="submit" id="add-book-btn">+ Dodaj Książkę</button>
+
+      <div id="log-in" class="main-content">
+        <form id="log-in-form" action="assets/php/login.php" method="post">
+          <h3>Zaloguj Się</h3>
+          <input class="input"
+          id="login"
+          name="login"
+          type="email"
+          placeholder="E-mail"
+          required
+          >
+          <input class="input"
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Hasło"
+          required
+          >
+          <button id="login-button" class="sumbit-button" type="submit">Zaloguj sie</button>
+        </form>
+      </div>
+
+      <div id="sign-up" class="main-content">
+        <form id="sign-up-form" action="assets/php/signup.php" method="post">
+          <h3>Zarejestuj się</h3>
+          <input class="input"
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Imię"
+          required
+          >
+          <input class="input"
+          id="surname"
+          name="surname"
+          type="text"
+          placeholder="Nazwisko"
+          required
+          >
+          <input class="input"
+          id="loginSignUp"
+          name="loginSignUp"
+          type="email"
+          placeholder="E-mail"
+          required
+          >
+          <input class="input"
+          id="passwordSignUp"
+          name="passwordSignUp"
+          type="password"
+          placeholder="Hasło"
+          required
+          >
+          <button id="sign-up-button" class="sumbit-button" type="submit">Zarejestruj sie</button>
+        </form>
+      </div>
+
+      <div id="library" class="main-content">  
+        <p>Zaloguj się lub zarejestruj, aby móc dodać książkę</p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      <a href="https://github.com/Marcel132">
+      Marcel132
+      <img src="img/github.svg" alt="link to github Marcel132"></a>
+    </p>
+  </footer>
+  <script src="assets/js/variable.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/session.js"></script>
+</body>
+</html>
