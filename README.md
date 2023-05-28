@@ -8,5 +8,3 @@ ENG: It is my first 'big' project. I learnd a lot when i was creating this site.
   2. JS
   3. PHP
   4. SQL
-  5. 
-
